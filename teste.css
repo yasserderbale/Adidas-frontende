@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(#342d2d, #743a3a);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 80%;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(181, 161, 136);
+  position: absolute;
+  clip-path: circle(43% at right 80%);
+  z-index: -50;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 54%;
+  margin: auto;
+  padding: 80px 0;
+}
+nav .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+nav ul li {
+  display: inline;
+  margin-right: 34px;
+}
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 19px;
+}
+nav ul li a:hover {
+  color: #911616c5;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto;
+}
+.container .content .text {
+  color: red;
+  margin: left -30px;
+}
+.content .text h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: left;
+}
+.content .text p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.image {
+  position: absolute;
+
+  bottom: 37%;
+  left: 0;
+}
+@media (min-width: 980px) and (max-width: 1150px) {
+  body {
+    background-color: red;
+  }
+}
+.content .image img {
+  width: 400px;
+}
